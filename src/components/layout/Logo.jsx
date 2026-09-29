@@ -1,16 +1,22 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from "next/image";
+import Link from "next/link";
 
-const Logo = () => {
+export default function Logo() {
   return (
-    <div >
-      <Link className='flex items-center gap-1' href={'/'}>
-             <Image alt='bytespace-logo' src={'/assets/logo.png'} width={20} height={20}></Image>
-             <span className="font-bold text-lg text-white">ByteSpace</span>
-      </Link>
-    </div>
-  )
-}
+    <Link
+      href="/"
+      className="flex items-center gap-2"
+    >
+      <Image
+        src="/assets/logo.png"
+        alt="ByteSpace"
+        width={28}
+        height={28}
+      />
 
-export default Logo
+      <span className="text-lg font-bold text-white">
+        ByteSpace
+      </span>
+    </Link>
+  );
+}

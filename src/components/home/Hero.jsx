@@ -8,21 +8,21 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-export default function Home() {
+const Hero=() =>{
   return (
-    <main className="min-w-full overflow-hidden bg-[#f5f5f3] text-[#252733]">
+    <main className="min-w-full overflow-hidden bg-white text-[#252733]">
 
-      {/* ================= HERO SECTION ================= */}
-      <section className="relative overflow-hidden bg-[#f5f5f3] pb-4 pt-2 lg:pt-3">
 
-        {/* Background Glow */}
+      <section className="relative overflow-hidden bg-white pb-4 pt-2 lg:pt-3">
+
+
         <div className="absolute left-[-150px] top-[-150px] h-[500px] w-[500px] rounded-full bg-lime-200/60 blur-[120px]" />
 
         <div className="absolute right-[-150px] top-[-100px] h-[500px] w-[500px] rounded-full bg-blue-100/70 blur-[120px]" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-6 py-20 lg:grid-cols-2">
 
-          {/* LEFT CONTENT */}
+
           <div className="max-w-xl">
 
             <h1 className="text-3xl font-bold">
@@ -39,7 +39,7 @@ export default function Home() {
               resources you need.
             </p>
 
-            {/* STATS */}
+
             <div className="mt-8 flex gap-10">
 
               <div>
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* RIGHT IMAGE / COURSE CARD */}
+
           <div className="relative flex justify-center lg:justify-end">
 
           
@@ -108,7 +108,7 @@ export default function Home() {
                 className="absolute bottom-0 right-5 z-10 h-full object-contain"
               />
 
-              {/* Progress Card */}
+
               <div className="absolute right-0 top-32 z-30 w-[150px] rounded-xl bg-white p-4 shadow-lg">
 
                 <p className="text-[9px] text-gray-500">
@@ -125,7 +125,6 @@ export default function Home() {
 
               </div>
 
-              {/* Lime Decoration */}
               <div className="absolute right-[-25px] top-20 z-20 rotate-[-15deg]">
 
                 <Image src={'/assets/Frame.png'} alt="" height={150} width={150}></Image>
@@ -140,19 +139,19 @@ export default function Home() {
 
 
     
-      <section className="relative overflow-hidden bg-[#f5f5f3] py-4 lg:py-6">
+      <section className="relative overflow-hidden bg-white py-4 lg:py-6">
 
-        {/* Background Glows */}
+
         <div className="absolute bottom-[-150px] left-[-100px] h-[450px] w-[450px] rounded-full bg-lime-200/60 blur-[120px]" />
 
         <div className="absolute right-[-150px] top-[-100px] h-[450px] w-[450px] rounded-full bg-blue-100/70 blur-[120px]" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
 
-          {/* LEFT IMAGE */}
+
           <div className="relative flex justify-center ">
 
-            {/* Revenue Card */}
+     
             <div className="absolute left-0 top-0 z-30 w-[205px] rounded-xl bg-blue-600 p-3 text-white shadow-lg">
 
               <p className="text-[15px]">Total Revenue</p>
@@ -188,14 +187,14 @@ export default function Home() {
 
             </div>
 
-            {/* Woman */}
+       
             <img
               src="/assets/student-woman.png"
               alt="Student"
               className="relative z-10 h-[390px] object-contain"
             />
 
-            {/* Happy Students */}
+     
             <div className="absolute bottom-8 right-0 z-30 w-[170px] rounded-xl bg-white p-3 shadow-lg">
 
               <p className="text-[12px]">
@@ -221,7 +220,7 @@ export default function Home() {
 
             </div>
 
-            {/* Lime Decoration */}
+          
              <div className="absolute right-[-15px] top-14 z-20 rotate-[-15deg]">
 
                 <Image src={'/assets/Frame.png'} alt="" height={150} width={150}></Image>
@@ -231,7 +230,7 @@ export default function Home() {
           </div>
 
 
-          {/* RIGHT CONTENT */}
+    
           <div className="max-w-xl">
 
             <h2 className="text-3xl font-bold leading-tight">
@@ -276,3 +275,4 @@ export default function Home() {
     </main>
   );
 }
+export default Hero

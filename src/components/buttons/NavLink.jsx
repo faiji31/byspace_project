@@ -1,14 +1,27 @@
-"use client"
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import React from 'react'
+"use client";
 
-const NavLink = ({href,children}) => {
-     const path = usePathname()
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const NavLink=({ href, children }) =>{
+  const pathname = usePathname();
+
+  const active =
+    href === "/"
+      ? pathname === "/"
+      : pathname.startsWith(href);
+
   return (
-   
-    <Link className= {`${path.startsWith(href) } font-medium`} href={href}>{children}</Link>
-  )
+    <Link
+      href={href}
+      className={`font-medium transition ${
+        active
+          ? "text-[#C8FF00]"
+          : "text-white hover:text-[#C8FF00]"
+      }`}
+    >
+      {children}
+    </Link>
+  );
 }
-
 export default NavLink

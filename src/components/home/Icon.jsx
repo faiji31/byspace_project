@@ -11,7 +11,7 @@ const icons = [
 
 const Icon = () => {
   return (
-    <section className=" min-w-screen bg-gray-300">
+    <section className="min-w-screen bg-white">
       <div className="mx-auto flex min-h-[200px] max-w-full items-center justify-center px-8">
         
         <div className="flex w-full items-center justify-between gap-8">

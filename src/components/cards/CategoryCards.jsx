@@ -38,31 +38,36 @@ const categories = [
 
 const CategoryCards=()=> {
   return (
-    <section className="w-full overflow-hidden bg-[#f5f5f3] py-8 text-black">
-      <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6 px-4">
+    <section className="bg-white py-16">
+
+      <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-5 px-6">
+
         {categories.map((category) => {
           const Icon = category.icon;
 
           return (
-            <div
+            <button
               key={category.name}
-              className="flex h-[112px] w-[140px] cursor-pointer flex-col items-center justify-center rounded-2xl border border-gray-200 bg-wghite transition duration-300 hover:-translate-y-1 hover:shadow-md"
+              className="flex h-[120px] w-[145px] flex-col items-center justify-center rounded-2xl border border-gray-200 bg-white transition duration-300 hover:-translate-y-1 hover:border-[#C8FF00] hover:shadow-lg"
             >
-        
-              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-lime-400">
-                <Icon size={21} strokeWidth={2.5} />
+
+              <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-[#C8FF00]">
+                <Icon
+                  size={21}
+                  strokeWidth={2.5}
+                />
               </div>
 
-          
-              <p className="text-sm font-medium text-gray-800">
+              <span className="text-sm font-medium text-gray-800">
                 {category.name}
-              </p>
-            </div>
+              </span>
+
+            </button>
           );
         })}
+
       </div>
     </section>
   );
 }
-
 export default CategoryCards

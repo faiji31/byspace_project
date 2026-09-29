@@ -8,20 +8,27 @@
   name: "light";
   default: true;
 
-  --color-primary: #0A38F5;
-  --color-secondary: #00A6A6;
+  --color-primary: #0a38f5;
+  --color-secondary: #00a6a6;
 
-  --color-base-100: #0A38F5;
-  --color-base-200: #0830D4;
-  --color-base-300: #0628B5;
-  --color-base-content: #ffffff;
+  --color-base-100: #ffffff;
+  --color-base-200: #f5f5f5;
+  --color-base-300: #e5e7eb;
+  --color-base-content: #111827;
 }
-
-@custom-variant dark (&:where([data-theme=light], [data-theme=light] *));
 
 html,
 body {
-  background-color: #f5f5f3;
-  color: #111827;
+  margin: 0;
   min-height: 100%;
+  background: #ffffff;
+  color: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
