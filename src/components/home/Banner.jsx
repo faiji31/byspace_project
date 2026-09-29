@@ -1,5 +1,6 @@
 import React from 'react'
 import { Search } from "lucide-react";
+import Image from 'next/image';
 
 const Banner = () => {
   return (
@@ -41,6 +42,41 @@ const Banner = () => {
             </button>
           </form>
         </div>
+          <div className="absolute -bottom-[45%] left-1/2 z-0 h-[900px] w-[900px] -translate-x-1/2 rounded-full bg-lime-400" />
+          <Image
+        src="/assets/person.png"
+        alt="Student with laptop"
+        width={520}
+        height={520}
+        priority
+        className="absolute bottom-0 left-1/2 z-10 -translate-x-1/2"
+      />
+
+       <div className="absolute bottom-52 left-[22%] z-20 rounded-xl bg-white px-4 py-3 text-black shadow-lg">
+        <p className="text-sm font-medium">UI/UX Design</p>
+        <p className="text-xs text-gray-400">200 Courses • 1000+ Students</p>
+      </div>
+      <div className="absolute bottom-56 right-[22%] z-20 w-44 rounded-xl bg-white p-4 text-black shadow-lg">
+        <p className="text-xs">Learning Progress</p>
+        <p className="text-3xl font-semibold">55%</p>
+        <div className="mt-2 h-1.5 rounded-full bg-gray-200">
+          <div className="h-full w-[55%] rounded-full bg-lime" />
+        </div>
+      </div>
+
+      <div className="absolute bottom-16 left-[18%] z-20 rounded-xl bg-white p-4 text-black shadow-lg">
+        <p className="text-sm font-medium">Happy Students</p>
+        <p className="text-xs text-gray-500">4.5 (240) ★</p>
+      </div>
+
+       <Image  src="/assets/Frame.png" alt="" width={200} height={200}
+        className="absolute left-0 top-28 hidden md:block" />
+      <Image  src="/assets/mask.png" alt="" width={260} height={260}
+        className="absolute bottom-10 left-90 hidden md:block" />
+      <Image src="/assets/cone.png" alt="" width={200} height={200}
+        className="absolute right-0 top-20 hidden md:block" />
+  
+
       </section>
     </div>
   )
