@@ -2,12 +2,13 @@ import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
 import NavLink from "../buttons/NavLink";
+import { IoBag } from "react-icons/io5";
 
 const Navbar = () => {
 
   const nav =<>
-  <li>
-   <NavLink href={'/'}>Home</NavLink>
+  <li >
+   <NavLink  href={'/'}>Home</NavLink>
   </li>
    <li>
    <NavLink href={'/courses'}>Courses</NavLink>
@@ -19,7 +20,7 @@ const Navbar = () => {
   </>
   return (
     <div>
-         <div className="navbar bg-base-100 ">
+         <div className="navbar #0A38F5 text-white  ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,8 +39,10 @@ const Navbar = () => {
      {nav}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="navbar-end space-x-4">
+   <Link href={'/sign-in'}>Sign In</Link>
+   <Link href={'/join-us'}>Join Us</Link>
+   <Link href={'/bag'}><IoBag></IoBag></Link>
   </div>
 </div>
     </div>
