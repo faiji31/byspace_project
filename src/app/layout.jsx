@@ -4,8 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 const poppins = Poppins({
-  weight:['100','200','300','400','600','800'],
-  subsets:['latin']
+  weight:['100','200','300','400','600','800']
 })
 
 
@@ -18,25 +17,19 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-
+      
     >
-      <body className={`${poppins.className} antialiased`}>
-        <header className="w-full">
-         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-           <Navbar></Navbar>
-
-         </div>
+      <body className={`${poppins.className} h-full antialiased`}>
+        <header className="py-2 md:w-11/12 mx-auto">
+          <Navbar></Navbar>
         </header>
-        
-        <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+        <main className="py-2 md:w-11/12 mx-auto min-h-[calc(100vh)]">
           {children}
         </main>
 
-       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-         <footer className="py-2 md:w-11/12 mx-auto">
+        <footer className=" md:w-11/12 mx-auto">
           <Footer></Footer>
         </footer>
-       </div>
         </body>
     </html>
   );
