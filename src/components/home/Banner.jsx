@@ -44,7 +44,7 @@ const Banner = () => {
         </div>
           <div className="absolute -bottom-[40%] left-1/2 z-0 h-[900px] w-[900px] -translate-x-1/2 rounded-full bg-lime-400" />
           <Image
-        src="/assets/person.png"
+        src="/assets/Person.png"
         alt="Student with laptop"
         width={820}
         height={700}
@@ -52,15 +52,15 @@ const Banner = () => {
         className="absolute bottom-0 left-1/2 z-10 -translate-x-1/2"
       />
 
-       <div className="absolute bottom-92 left-[32%] z-20 rounded-xl bg-white px-5 py-4 text-black shadow-lg">
+       <div className="absolute bottom-[92px] left-[32%] z-20 rounded-xl bg-white px-5 py-4 text-black shadow-lg">
         <p className="text-sm font-medium">UI/UX Design</p>
         <p className="text-xs text-gray-400">200 Courses • 1000+ Students</p>
       </div>
-      <div className="absolute bottom-76 right-[38%] z-20 w-44 rounded-xl bg-white p-6 text-black shadow-lg">
+      <div className="absolute bottom-[76px] right-[38%] z-20 w-44 rounded-xl bg-white p-6 text-black shadow-lg">
         <p className="text-xs font-bold">Learning Progress</p>
         <p className="text-3xl font-semibold">55%</p>
         <div className="mt-2 h-1.5 rounded-full bg-gray-200">
-          <div className="h-full w-[55%] rounded-full bg-lime" />
+          <div className="h-full w-[55%] rounded-full bg-lime-400" />
         </div>
       </div>
 
@@ -72,12 +72,12 @@ const Banner = () => {
        <Image  src="/assets/Frame.png" alt="" width={200} height={200}
         className="absolute left-0 top-28 hidden md:block" />
       <Image  src="/assets/mask.png" alt="" width={300} height={300}
-        className="absolute bottom-10 left-90 hidden md:block" />
-      <Image src="/assets/cone.png" alt="" width={200} height={200}
+        className="absolute bottom-10 left-[90px] hidden md:block" />
+      <Image src="/assets/Cone.png" alt="" width={200} height={200}
         className="absolute right-0 top-20 hidden md:block" />
-        <Image src='/assets/frame1.png' alt='' width={150} height={200} className="absolute left-142 top-92 hidden md:block"></Image>
-        <Image src='/assets/squiggle-lime.png' alt='' width={150} height={200} className="absolute right-142 top-92 hidden md:block"></Image>
-         <Image src='/assets/frame1.png' alt='' width={300} height={300} className="absolute bottom-10 right-90 hidden md:block"></Image>
+        <Image src='/assets/frame1.png' alt='' width={150} height={200} className="absolute left-[142px] top-[92px] hidden md:block"></Image>
+        <Image src='/assets/squiggle-lime.png' alt='' width={150} height={200} className="absolute right-[142px] top-[92px] hidden md:block"></Image>
+         <Image src='/assets/frame1.png' alt='' width={300} height={300} className="absolute bottom-10 right-[90px] hidden md:block"></Image>
   
 
       </section>

@@ -158,14 +158,6 @@ const courses = [
   },
 ];
 
-const iconMap = {
-  Design: PenTool,
-  Development: Code2,
-  "IT & Software": Laptop,
-  Business: Building2,
-  Marketing: Megaphone,
-  Photography: Camera,
-};
 
 const Discover = () => {
   return (
@@ -232,7 +224,7 @@ const Discover = () => {
       </div>
       <div>
         <h1  className='text-3xl text-center mt-12  font-bold'>Explore Diverse Learning Paths at Bytespace</h1>
-        <p className='text-[13px] text-center mt-3 text-gray-400'>At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.</p>
+        <p className='text-[13px] text-center mt-3 text-gray-400'>At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there is something for everyone. Unleash your potential and explore our carefully curated categories.</p>
       </div>
          
    

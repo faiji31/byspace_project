@@ -38,7 +38,7 @@ const categories = [
 
 const CategoryCards=()=> {
   return (
-    <section className=" min-h-screen min-w-screen overflow-hidden bg-white text-black">
+    <section className="w-full overflow-hidden bg-[#f5f5f3] py-8 text-black">
       <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6 px-4">
         {categories.map((category) => {
           const Icon = category.icon;
@@ -48,12 +48,12 @@ const CategoryCards=()=> {
               key={category.name}
               className="flex h-[112px] w-[140px] cursor-pointer flex-col items-center justify-center rounded-2xl border border-gray-200 bg-wghite transition duration-300 hover:-translate-y-1 hover:shadow-md"
             >
-              {/* Icon Circle */}
+        
               <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-lime-400">
                 <Icon size={21} strokeWidth={2.5} />
               </div>
 
-              {/* Title */}
+          
               <p className="text-sm font-medium text-gray-800">
                 {category.name}
               </p>
