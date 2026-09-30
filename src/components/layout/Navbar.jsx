@@ -52,7 +52,7 @@ export default function Navbar() {
                 </li>
 
                 <li>
-                  <NavLink href="/creators">Creator</NavLink>
+                  <NavLink href="/creators">Creators</NavLink>
                 </li>
               </ul>
             </div>
@@ -60,16 +60,16 @@ export default function Navbar() {
             <Logo />
           </div>
 
-          {/* CENTER */}
+     
           <div className="navbar-center hidden lg:flex">
             <nav className="flex items-center gap-10">
               <NavLink href="/">Home</NavLink>
               <NavLink href="/courses">Courses</NavLink>
-              <NavLink href="/creators">Creator</NavLink>
+              <NavLink href="/creators">Creators</NavLink>
             </nav>
           </div>
 
-          {/* RIGHT */}
+      
           <div className="navbar-end gap-5">
 
             <Link
