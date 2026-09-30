@@ -152,7 +152,7 @@ const footerLinks = {
           </p>
 
 
-          {/* Bottom Links */}
+  
           <div className="flex flex-wrap items-center gap-5">
 
             <Link
