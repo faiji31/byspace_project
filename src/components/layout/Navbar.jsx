@@ -13,10 +13,10 @@ export default function Navbar() {
 
         <div className="navbar min-h-[72px] bg-transparent px-0">
 
-          {/* LEFT */}
+      
           <div className="navbar-start">
 
-            {/* Mobile Menu */}
+  
             <div className="dropdown lg:hidden">
               <div
                 tabIndex={0}

@@ -34,7 +34,6 @@ export default function FilterBar() {
         <FilterButton icon={SortIcon} label="Most relevant" />
       </div>
 
-      {/* category chips */}
       <CategoryChips />
     </section>
   );
