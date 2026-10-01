@@ -8,7 +8,6 @@ const CoursesCard=({ course }) =>{
       className="group block overflow-hidden rounded-2xl border border-gray-200 bg-white transition hover:shadow-xl"
     >
       <div className="relative">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={course.image} alt={course.title} className="h-44 w-full object-cover" />
         <span className="absolute left-3 top-3 rounded-full bg-white px-3 py-1 text-xs font-medium">
           {course.level}

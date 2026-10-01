@@ -10,7 +10,7 @@ const icons = [
 
 const BrandIcons=()=> {
   return (
-    <section className="bg-white py-14">
+    <section className="bg-gray-300 py-20 mb-5">
 
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-12 px-6 md:justify-between">
 
