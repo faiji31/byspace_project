@@ -1,6 +1,7 @@
+import Card from '@/components/creatorsComponent/Card'
 import CreatorsBanner from '@/components/creatorsComponent/CreatorsBanner'
 import FilterBar from '@/components/filter/FilterBar'
-import Discover from '@/components/home/Discover'
+
 import React from 'react'
 
 const page = () => {
@@ -13,7 +14,7 @@ const page = () => {
          <FilterBar></FilterBar>
        </section>
        <section>
-       <Discover />
+       <Card></Card>
        </section>
     </div>
   )

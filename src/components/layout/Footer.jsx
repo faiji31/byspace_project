@@ -39,63 +39,61 @@ const footerLinks = {
           <div>
 
           <div className="flex gap-2 items-center" >
-             <Image  src={'/assets/logo.png' } alt="" height={40} width={40}></Image>
-             <h3 className="text-[20px] font-bold">ByteSpace</h3>
+             <Image  src={'/assets/logo.png' } alt="" height={42} width={42}></Image>
+             <h3 className="text-[24px] font-bold">ByteSpace</h3>
           </div>
 
 
       
-            <p className="mt-3 max-w-[310px] text-[8px] leading-4 text-black">
+            <p className="mt-3 max-w-[310px] text-[13px] leading-4 text-black">
               Stay Up to date with our latest features and releases by joining
               our newsletter.
             </p>
 
 
-        
-            <form className="mt-7 flex max-w-[295px] items-center gap-3">
+        <form className="mt-7 flex max-w-[350px] items-center gap-3">
+  <input
+    type="email"
+    placeholder="Enter your email"
+    className="
+      h-[40px]
+      w-full
+      rounded-full
+      border
+      border-gray-200
+      bg-white
+      px-5
+      text-[12px]
+      text-gray-700
+      outline-none
+      placeholder:text-gray-400
+      focus:border-[#c7ff00]
+    "
+  />
 
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="
-                  h-[31px]
-                  w-full
-                  rounded-full
-                  border
-                  border-gray-200
-                  bg-white
-                  px-4
-                  text-[9px]
-                  text-gray-700
-                  outline-none
-                  placeholder:text-gray-400
-                  focus:border-[#c7ff00]
-                "
-              />
-
-              <button
-                type="submit"
-                className="
-                  h-[31px]
-                  shrink-0
-                  rounded-full
-                  bg-[#c7ff00]
-                  px-4
-                  text-[9px]
-                  font-medium
-                  text-gray-900
-                  transition
-                  hover:bg-[#baff00]
-                "
-              >
-                Search
-              </button>
-
-            </form>
+  <button
+    type="submit"
+    className="
+      h-[40px]
+      shrink-0
+      rounded-full
+      bg-[#c7ff00]
+      px-5
+      text-[12px]
+      font-medium
+      text-gray-900
+      transition
+      hover:bg-[#baff00] cursor-pointer
+    "
+  >
+    Search
+  </button>
+</form>
+           
 
 
         
-            <p className="mt-4 max-w-[300px] text-[7px] leading-3 text-gray-500">
+            <p className="mt-4 max-w-[300px] text-[10px] leading-3 text-gray-500">
               By subscribing, you agree to our Privacy Policy and consent to
               receive updates from our company.
             </p>
@@ -108,7 +106,7 @@ const footerLinks = {
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
 
-              <h3 className="text-[8px] font-medium text-gray-900">
+              <h3 className="text-[12px] font-medium text-gray-900">
                 {title}
               </h3>
 
@@ -120,7 +118,7 @@ const footerLinks = {
                     <Link
                       href="#"
                       className="
-                        text-[8px]
+                        text-[12px]
                         text-gray-500
                         transition
                         hover:text-gray-900
@@ -147,7 +145,7 @@ const footerLinks = {
         <div className="flex flex-col gap-4 pt-4 sm:flex-row sm:items-center sm:justify-between">
 
 
-          <p className="text-[9px] text-gray-500">
+          <p className="text-[9px] text-black">
             © 2023 ByteSpace. All rights reserved.
           </p>
 
@@ -157,21 +155,21 @@ const footerLinks = {
 
             <Link
               href="#"
-              className="text-[9px] text-gray-500 hover:text-gray-900"
+              className="text-[9px] text-black hover:text-gray-900"
             >
               Privacy Policy
             </Link>
 
             <Link
               href="#"
-              className="text-[9px] text-gray-500 hover:text-gray-900"
+              className="text-[10px] text-black hover:text-gray-900"
             >
               Terms of Service
             </Link>
 
             <Link
               href="#"
-              className="text-[9px] text-gray-500 hover:text-gray-900"
+              className="text-[10px] text-black hover:text-gray-900"
             >
               Cookies Settings
             </Link>
