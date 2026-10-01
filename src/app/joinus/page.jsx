@@ -102,7 +102,7 @@ const page = () => {
               <label className="mb-1 block text-xs">Password</label>
               <input
                 type="password"
-                placeholder="..........."
+                placeholder="*********"
                 className="h-10 w-full rounded-lg border border-gray-200 bg-[#F6F7FA] px-3 text-sm"
               />
             </div>

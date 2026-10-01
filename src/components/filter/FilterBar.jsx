@@ -22,7 +22,7 @@ const SortIcon = (
 
 const FilterBar=()=> {
   return (
-    <section className="mx-auto w-full mt-10 space-y-5   px-58 pb-12">
+    <section className="mx-auto mt-14 max-w-7xl w-full space-y-5 px-4 pb-12 sm:px-6 md:px-10 lg:px-16 xl:px-20">
 
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-wrap items-center gap-3">
