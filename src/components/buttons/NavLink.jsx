@@ -14,7 +14,7 @@ const NavLink=({ href, children }) =>{
   return (
     <Link
       href={href}
-      className={`font-medium transition ${
+      className={`font-light text-[12px] transition ${
         active
           ? "text-[#C8FF00]"
           : "text-white hover:text-[#C8FF00]"
