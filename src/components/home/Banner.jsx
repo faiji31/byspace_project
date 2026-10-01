@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Search } from "lucide-react";
+import { Search, Star } from "lucide-react";
 
 const Banner=()=> {
   return (
-    <section className="relative min-h-[650px] overflow-hidden bg-[#0A38F5] text-white">
+    <section className="relative min-h-[950px] overflow-hidden bg-[#0A38F5] text-white">
 
   
       <div
@@ -67,7 +67,7 @@ const Banner=()=> {
       />
 
 
-      <div className="absolute bottom-20 left-[8%] z-30 hidden rounded-xl bg-white px-5 py-4 text-gray-900 shadow-xl lg:block">
+      <div className="absolute bottom-60 left-[28%] z-30 hidden rounded-xl bg-white px-5 py-4 text-gray-900 shadow-xl lg:block">
         <p className="text-sm font-semibold">
           UI/UX Design
         </p>
@@ -77,7 +77,7 @@ const Banner=()=> {
         </p>
       </div>
 
-      <div className="absolute bottom-20 right-[8%] z-30 hidden w-44 rounded-xl bg-white p-5 text-gray-900 shadow-xl lg:block">
+      <div className="absolute bottom-57 right-[38%] z-30 hidden w-44 rounded-xl bg-white p-5 text-gray-900 shadow-xl lg:block">
 
         <p className="text-xs font-semibold">
           Learning Progress
@@ -92,12 +92,42 @@ const Banner=()=> {
         </div>
 
       </div>
+       
+          
+             <div  className="absolute bottom-9 right-[61%] right-4 w-[190px] rounded-xl bg-white p-3 text-[#0B1B5C]">
+
+              <p className="text-[12px]">
+                Happy Students
+              </p>
+               <div className='flex items-center gap-2'>
+                <p className="text-xs font-bold">4.5 <span className='font-light text-[12px]'>(240K)</span> </p>
+               <p><Star className='size-4'></Star></p>
+
+               </div>
+              <div className="mt-2 flex items-center">
+
+                <div className="flex -space-x-2">
+                  <div className="h-7 w-7 rounded-full bg-gray-300" />
+                  <div className="h-7 w-7 rounded-full bg-gray-400" />
+                  <div className="h-7 w-7 rounded-full bg-gray-500" />
+                  <div className="h-7 w-7 rounded-full bg-gray-600" />
+                   <div className="h-7 w-7 rounded-full bg-gray-600" />
+                    
+                </div>
+
+                <span className="ml-auto rounded-full bg-lime-300 px-2 py-1 text-[8px]">
+                  2K+
+                </span>
+
+              </div>
+
+            </div>
 
 
       <Image
         src="/assets/Frame.png"
         alt=""
-        width={150}
+        width={200}
         height={150}
         className="absolute left-5 top-24 hidden md:block"
       />
@@ -105,7 +135,7 @@ const Banner=()=> {
       <Image
         src="/assets/Cone.png"
         alt=""
-        width={150}
+        width={200}
         height={150}
         className="absolute right-5 top-24 hidden md:block"
       />
@@ -113,9 +143,30 @@ const Banner=()=> {
       <Image
         src="/assets/squiggle-lime.png"
         alt=""
-        width={130}
+        width={200}
         height={160}
-        className="absolute right-[12%] top-24 hidden md:block"
+        className="absolute right-[19%] bottom-72 hidden md:block"
+      />
+       <Image
+        src="/assets/faiji.png"
+        alt=""
+        width={200}
+        height={160}
+        className="absolute left-[19%] bottom-72 hidden md:block"
+      />
+       <Image
+        src="/assets/faiji.png"
+        alt=""
+        width={300}
+        height={160}
+        className="absolute right-[21%] bottom-12 hidden md:block"
+      />
+       <Image
+        src="/assets/mask.png"
+        alt=""
+        width={300}
+        height={160}
+        className="absolute left-[21%] bottom-12 hidden md:block"
       />
 
     </section>

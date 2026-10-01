@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Stars from "./Stars";
 
-export default function ReviewsTab({ course }) {
+const ReviewsTab=({ course })=> {
   const [filter, setFilter] = useState("all");
 
   const visible =
@@ -78,7 +78,7 @@ export default function ReviewsTab({ course }) {
             <article key={r.name} className="rounded-xl border border-gray-200 p-4">
               <div className="flex items-start justify-between">
                 <div className="flex items-center gap-3">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
+             
                   <img src={r.avatar} alt={r.name} className="h-9 w-9 rounded-full" />
                   <div>
                     <p className="text-sm font-semibold">{r.name}</p>
@@ -99,3 +99,4 @@ export default function ReviewsTab({ course }) {
     </div>
   );
 }
+export default ReviewsTab

@@ -1,3 +1,4 @@
+import { Star } from 'lucide-react'
 import React from 'react'
 
 const Coursecard = ({course}) => {
@@ -49,7 +50,7 @@ const Coursecard = ({course}) => {
             </span>
 
             <span className="text-gray-400">
-              ★
+             <Star></Star>
             </span>
           </div>
 

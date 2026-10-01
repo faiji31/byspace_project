@@ -20,7 +20,7 @@ const SortIcon = (
   <ListSortDescending />
 );
 
-export default function FilterBar() {
+const FilterBar=()=> {
   return (
     <section className="mx-auto w-full mt-10 space-y-5   px-58 pb-12">
 
@@ -38,3 +38,4 @@ export default function FilterBar() {
     </section>
   );
 }
+export default FilterBar

@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+
+export const metadata = { title: "Courses | Sign in" };
+
 const page = () => {
   return (
     <div>

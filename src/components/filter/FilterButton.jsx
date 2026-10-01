@@ -1,4 +1,4 @@
-export default function FilterButton({ icon, label }) {
+const FilterButton=({ icon, label })=> {
   return (
     <button
       type="button"
@@ -9,3 +9,4 @@ export default function FilterButton({ icon, label }) {
     </button>
   );
 }
+export default FilterButton

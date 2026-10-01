@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function CourseDetailsPage({ params }) {
-  const { id } = await params; // Next 14 এ params সরাসরি object, await করলেও সমস্যা নেই
+  const { id } = await params; 
   const course = getCourseById(id);
   if (!course) notFound();
 

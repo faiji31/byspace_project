@@ -11,7 +11,7 @@ const tabs = [
   { key: "reviews", label: "Reviews" },
 ];
 
-export default function CourseTabs({ course }) {
+const CourseTabs=({ course })=> {
   const [active, setActive] = useState("about");
 
   return (
@@ -36,3 +36,4 @@ export default function CourseTabs({ course }) {
     </div>
   );
 }
+export default CourseTabs

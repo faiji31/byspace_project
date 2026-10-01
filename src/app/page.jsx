@@ -6,31 +6,23 @@ import Hero from "@/components/home/Hero";
 import CreatorBanner from "@/components/home/CreatorBanner";
 import Community from "@/components/home/Community";
 
-const Home=()=> {
+const Home = () => {
   return (
     <main className="w-full overflow-hidden bg-white">
-
-  
       <Banner />
 
-     
       <BrandIcons />
 
-    
       <Discover />
 
-    
       <CategoryCards />
 
-     
       <Hero />
 
-      
       <CreatorBanner />
       <Community></Community>
-
     </main>
   );
-}
+};
 
-export default Home
+export default Home;

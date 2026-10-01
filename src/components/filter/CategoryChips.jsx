@@ -10,7 +10,7 @@ const categories = [
   "Cooking",
 ];
 
-export default function CategoryChips() {
+const CategoryChips=()=> {
   return (
     <div className="flex gap-3 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       {categories.map((cat, i) => (
@@ -29,3 +29,4 @@ export default function CategoryChips() {
     </div>
   );
 }
+export default CategoryChips

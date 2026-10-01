@@ -4,6 +4,8 @@ import Link from 'next/link'
 import React from 'react'
 import { FaFacebook, FaGoogle } from 'react-icons/fa'
 
+export const metadata = { title: "Join Us | ByteSpace" };
+
 const page = () => {
   return (
     <div>

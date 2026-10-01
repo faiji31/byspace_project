@@ -2,7 +2,7 @@
 
 import { courseIncludes } from "@/data/courses";
 
-export default function EnrollCard({ course }) {
+const EnrollCard=({ course })=> {
   const info = course.instructorInfo;
 
   return (
@@ -61,3 +61,4 @@ export default function EnrollCard({ course }) {
     </div>
   );
 }
+export default EnrollCard

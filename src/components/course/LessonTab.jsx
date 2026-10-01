@@ -1,6 +1,6 @@
 import { courseIncludes } from "@/data/courses";
 
-export default function EnrollCard({ course }) {
+const LessonTab=({ course })=> {
   const info = course.instructorInfo;
 
   return (
@@ -59,3 +59,4 @@ export default function EnrollCard({ course }) {
     </div>
   );
 }
+export default LessonTab
