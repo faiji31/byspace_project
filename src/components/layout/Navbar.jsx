@@ -73,14 +73,14 @@ export default function Navbar() {
           <div className="navbar-end gap-5">
 
             <Link
-              href="/sign-in"
+              href="/signin"
               className="text-sm font-medium text-white hover:text-[#C8FF00]"
             >
               Sign In
             </Link>
 
             <Link
-              href="/join-us"
+              href="/joinus"
               className="rounded-full bg-[#C8FF00] px-5 py-2 text-sm font-semibold text-gray-900 transition hover:bg-[#d9ff4d]"
             >
               Join Us

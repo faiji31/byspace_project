@@ -31,7 +31,7 @@ const footerLinks = {
   return (
     <footer className="w-full bg-white">
 
-      <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:py-14">
+      <div className="mx-auto max-w-7xl px-5 py-6 sm:px-8 lg:py-14">
 
         <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
 
